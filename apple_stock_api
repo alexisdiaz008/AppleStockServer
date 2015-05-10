@@ -1,0 +1,9 @@
+require 'nokogiri'
+
+
+dom = Nokogiri::HTML(response.body)
+puts dom.class
+
+dom.xpath("/")
+
+dom.xpath("//span[@id='yfs_184_aapl']")
